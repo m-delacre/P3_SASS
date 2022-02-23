@@ -1,0 +1,19 @@
+{
+  "name": "p3_delacre_matthieu",
+  "version": "1.0.0",
+  "description": "projet 3 OC",
+  "main": "index.js",
+  "scripts": {
+    "sass":"sass --watch ./sass/main.scss:./public/css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/m-delacre/mdelacre_3_22022022.git"
+  },
+  "author": "mdelacre",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/m-delacre/mdelacre_3_22022022/issues"
+  },
+  "homepage": "https://github.com/m-delacre/mdelacre_3_22022022#readme"
+}
