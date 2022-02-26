@@ -7,26 +7,33 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />    <title>Ohmyfood!</title>
 </head>
 <body>
+    <!--LOADING_SPINNER-->
     <!--HEADER-->
     <header>
         <p><img src="./public/images/logo/ohmyfood@2x.svg" alt="logo"></p>
     </header>
     <main>
         <!--LOCALISATION-->
-        <section>
+        <section class="localisation">
             <span style="font-size: 2em; color: rgb(34, 34, 34);">
                 <i class="fa-solid fa-location-dot"></i>
             </span>
             <h4>Paris, Belleville</h3>
         </section>
-        <!--SLOGAN-->
-        <section>
-            <h1>Réservez le menu qui vous convient</h1>
-            <p>Découvrez des restaurants d'exception, séléctionnés par nos soins.</p>
-            <button>Explorer nos restaurants</button>
-        </section>
+        <!--PRESENTATION-->
+        <nav class="presentation">
+            <div class="presentation_titre">
+                <h1>Réservez le menu qui vous convient</h1>
+            </div>
+            <div class="presentation_text">
+                <p>Découvrez des restaurants d'exception, séléctionnés par nos soins.</p>
+            </div>
+            <div class="presentation_btn btn--gradiant">
+                <button>Explorer nos restaurants</button>
+            </div>
+        </nav>
         <!--FONCTIONNEMENT-->
-        <section>
+        <section class="fonctionnement">
             <h1>Fonctionnement</h1>
             <!--TUTO_ALL_CARD-->
             <div class="tuto_cardList">
@@ -75,7 +82,7 @@
             </div>
         </section>
         <!--RESTAURANTS-->
-        <section>
+        <section class="resto">
             <h1>Restaurants</h1>
             <div class="resto_cardList">
                 <!--RESTO_CARD_1-->
@@ -157,20 +164,23 @@
     </main>
     <footer>
         <p><img src="./public/images/logo/ohmyfood@2x.svg" alt="logo"></p>
-        <div class="footer_doubleText">
-            <span style="font-size: 2em; color: rgb(59, 59, 59);">
-                <i class="fa-solid fa-utensils"></i>
-            </span>
-            <a href="#">Proposer un restaurant</a>
+        <div class="footer_list">
+            <div class="footer_list_doubleText">
+                <span style="font-size: 2em; color: rgb(59, 59, 59);">
+                    <i class="fa-solid fa-utensils"></i>
+                </span>
+                <a href="#">Proposer un restaurant</a>
+            </div>
+            <div class="footer_list_doubleText">
+                <span style="font-size: 2em; color: rgb(59, 59, 59);">
+                    <i class="fa-solid fa-handshake-angle"></i>
+                </span>
+                <a href="#">Devenir partenaire</a>
+            </div>
+            <a href="#">Mention légales</a>
+            <a href="#">Contact</a>
         </div>
-        <div class="footer_doubleText">
-            <span style="font-size: 2em; color: rgb(59, 59, 59);">
-                <i class="fa-solid fa-handshake-angle"></i>
-            </span>
-            <a href="#">Devenir partenaire</a>
-        </div>
-        <a href="#">Mention légales</a>
-        <a href="#">Contact</a>
+        
     </footer>
 </body>
 </html>
