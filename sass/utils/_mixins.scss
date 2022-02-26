@@ -1,0 +1,8 @@
+@import "../base/typography";
+
+@mixin titre {
+    font-family: $font;
+    font-weight: 780;
+    font-size: 22px;
+    color: black;
+}

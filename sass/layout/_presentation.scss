@@ -1,0 +1,57 @@
+@import "../utils/mixins";
+@import "../base/typography";
+@import "../composants/button";
+
+.presentation{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 280px;
+    background-color: rgb(245, 245, 245);
+    align-items: center;
+    
+    @media(max-width:768px){
+        &_titre{
+            margin-top: 40px;
+            padding-left: 50px;
+            padding-right: 50px;
+            text-align: center;
+        }
+
+        &_text{
+            margin-top: 20px;
+            padding-left: 20px;
+            padding-right: 20px;
+            text-align: center;
+        }
+
+        &_btn{
+            margin-top: 30px;
+            font-family: $font;
+            align-items: center;
+            justify-content: center;
+
+            & p{
+                margin-top: 13px;
+                color: white;
+                text-align: center;
+                font-size: 15px;
+                font-weight: 400;
+            }
+        }
+    }
+}
+
+h1{
+    @include titre;
+}
+
+p{
+    font-family: $font;
+    color: rgb(114, 114, 114);
+    font-size: 18px;
+}
+
+a{
+    text-decoration: none;
+}

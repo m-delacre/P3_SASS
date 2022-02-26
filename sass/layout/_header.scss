@@ -1,0 +1,30 @@
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 65px;
+    background-color: white;
+    filter: drop-shadow(0 0 0.20rem rgb(165, 165, 165));
+
+    &_icon{
+        display: none;
+    }
+    
+    @media (max-width: 768px){
+        &_logo{
+            width: 180px;
+            height: 30px;
+            margin-top: 15px; 
+            align-items: center;
+            justify-content: center;
+    
+            & img{
+                width: 100%;
+                height: 100%;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+    }
+}

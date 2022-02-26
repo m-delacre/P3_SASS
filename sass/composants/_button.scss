@@ -1,5 +1,17 @@
 @import "./base/_typography.css";
+@import "../utils/variables";
 
-.presentation_btn {
-    font-style: $font;
+.btn{
+    background-color: rgb(182, 182, 182);
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    width: 210px;
+    height: 45px;
+    box-shadow: 2px 2px 2px 1px rgba(78, 78, 78, 0.2);
+
+    &--gradient{
+        background: linear-gradient(350deg, $color-primary, $color-secondary);
+    }
 }

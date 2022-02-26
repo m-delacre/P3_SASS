@@ -4,21 +4,36 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />    <title>Ohmyfood!</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./public/css/style.css"/>
+    <title>Ohmyfood!</title>
 </head>
 <body>
     <!--LOADING_SPINNER-->
     <!--HEADER-->
-    <header>
-        <p><img src="./public/images/logo/ohmyfood@2x.svg" alt="logo"></p>
+    <header class="header">
+        <div class="header_icon">
+            <a href="./index.html">
+                <span class="icon">
+                    <i class="fa-solid fa-arrow-left"></i>
+                </span>
+            </a>
+        </div>
+        <div class="header_logo">
+            <p><img src="./public/images/logo/ohmyfood@2x.svg" alt="logo"></p>
+        </div>
     </header>
     <main>
         <!--LOCALISATION-->
         <section class="localisation">
-            <span style="font-size: 2em; color: rgb(34, 34, 34);">
-                <i class="fa-solid fa-location-dot"></i>
-            </span>
-            <h4>Paris, Belleville</h3>
+            <div class="localisation_icon">
+                <span>
+                    <i class="fa-solid fa-location-dot"></i>
+                </span>
+            </div>
+            <div class="localisation_text">
+                <h4>Paris, Belleville</h4>
+            </div>
         </section>
         <!--PRESENTATION-->
         <nav class="presentation">
@@ -28,8 +43,8 @@
             <div class="presentation_text">
                 <p>Découvrez des restaurants d'exception, séléctionnés par nos soins.</p>
             </div>
-            <div class="presentation_btn btn--gradiant">
-                <button>Explorer nos restaurants</button>
+            <div class="presentation_btn btn btn--gradient">
+                <p><a>Explorer nos restaurants</a></p>
             </div>
         </nav>
         <!--FONCTIONNEMENT-->
