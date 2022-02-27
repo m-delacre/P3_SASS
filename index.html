@@ -44,7 +44,7 @@
                 <p>Découvrez des restaurants d'exception, séléctionnés par nos soins.</p>
             </div>
             <div class="presentation_btn btn btn--gradient">
-                <p><a>Explorer nos restaurants</a></p>
+                <p><a href="#resto">Explorer nos restaurants</a></p>
             </div>
         </nav>
         <!--FONCTIONNEMENT-->
@@ -57,13 +57,15 @@
                     <div class="tuto_card_num">
                         <p>1</p>
                     </div>
-                    <div class="tuto_card_icon">
-                        <span style="font-size: 2em; color: rgb(85, 85, 85);">
-                            <i class="fa-solid fa-mobile-screen-button"></i>
-                        </span>
-                    </div>
-                    <div class="tuto_card_text">
-                        <h3>Choisissez un restaurant</h3>
+                    <div class="tuto_card_background">
+                        <div class="tuto_card_icon">
+                            <span>
+                                <i class="fa-solid fa-mobile-screen-button"></i>
+                            </span>
+                        </div>
+                        <div class="tuto_card_text">
+                            <h3>Choisissez un restaurant</h3>
+                        </div>
                     </div>
                 </div>
                 <!--TUTO_CARD_2-->
@@ -71,13 +73,15 @@
                     <div class="tuto_card_num">
                         <p>2</p>
                     </div>
-                    <div class="tuto_card_icon">
-                        <span style="font-size: 2em; color: rgb(85, 85, 85);">
-                            <i class="fa-solid fa-list-ul"></i>
-                        </span>
-                    </div>
-                    <div class="tuto_card_text">
-                        <h3>Composez votre menu</h3>
+                    <div class="tuto_card_background">
+                        <div class="tuto_card_icon">
+                            <span>
+                                <i class="fa-solid fa-list-ul"></i>
+                            </span>
+                        </div>
+                        <div class="tuto_card_text">
+                            <h3>Composez votre menu</h3>
+                        </div>
                     </div>
                 </div>
                 <!--TUTO_CARD_3-->
@@ -85,19 +89,21 @@
                     <div class="tuto_card_num">
                         <p>3</p>
                     </div>
-                    <div class="tuto_card_icon">
-                        <span style="font-size: 2em; color: rgb(144, 13, 195);">
-                            <i class="fa-solid fa-store"></i>
-                        </span>
-                    </div>
-                    <div class="tuto_card_text">
-                        <h3>Dégustez au restaurant</h3>
+                    <div class="tuto_card_background">
+                        <div class="tuto_card_icon">
+                            <span>
+                                <i class="fa-solid fa-store"></i>
+                            </span>
+                        </div>
+                        <div class="tuto_card_text">
+                            <h3>Dégustez au restaurant</h3>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
         <!--RESTAURANTS-->
-        <section class="resto">
+        <section class="resto" id="resto">
             <h1>Restaurants</h1>
             <div class="resto_cardList">
                 <!--RESTO_CARD_1-->
@@ -177,17 +183,17 @@
             </div>
         </section>
     </main>
-    <footer>
-        <p><img src="./public/images/logo/ohmyfood@2x.svg" alt="logo"></p>
+    <footer class="footer">
+        <p><img class="changeColor" src="./public/images/logo/ohmyfood@2x.svg" alt="logo"></p>
         <div class="footer_list">
             <div class="footer_list_doubleText">
-                <span style="font-size: 2em; color: rgb(59, 59, 59);">
+                <span id="proposer">
                     <i class="fa-solid fa-utensils"></i>
                 </span>
                 <a href="#">Proposer un restaurant</a>
             </div>
             <div class="footer_list_doubleText">
-                <span style="font-size: 2em; color: rgb(59, 59, 59);">
+                <span>
                     <i class="fa-solid fa-handshake-angle"></i>
                 </span>
                 <a href="#">Devenir partenaire</a>

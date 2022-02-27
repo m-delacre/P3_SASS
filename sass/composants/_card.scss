@@ -1,0 +1,61 @@
+@import "./base/_typography.css";
+@import "../utils/variables";
+
+/* card tuto*/
+.tuto_card{
+    width: 100%;
+    height: 70px;
+    display: flex;
+    margin-bottom: 20px;
+    align-items: center;
+    justify-content: center;
+    filter: drop-shadow(0 0 0.50rem rgb(199, 199, 199));
+
+    &_num{
+        position: relative;
+        width: 25px;
+        height: 25px;
+        border-radius: 50%;
+        background-color: $color-primary;
+        margin-right: 10px;
+
+        & p{
+            font-family: $font;
+            font-size: 12px;
+            color: white;
+            text-align: center;
+            margin-top: 7px;
+        }
+    }
+
+    &_background{
+        width: 100%;
+        height: 65px;
+        display: flex;
+        background: rgb(242, 242, 242);
+        border-radius: 10px;
+        margin-left: -20px;
+    }
+
+    &_icon{
+        padding-top: 22px;
+        padding-right: 25px;
+        padding-left: 25px;
+
+        & span{
+            font-size: 1.2em;
+            color: rgb(112, 112, 112);
+        }
+    }
+
+    &_text{
+        padding-top: 25px;
+        padding-right: 28px;
+    }
+}
+
+h3{
+    font-family: $font;
+    font-size: 16px;
+    font-weight: 600;
+}

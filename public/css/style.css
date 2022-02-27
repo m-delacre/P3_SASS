@@ -7,6 +7,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap");
 @import "./base/_typography.css";
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap");
+@import "./base/_typography.css";
+@import "./base/_typography.css";
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap");
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -128,6 +133,7 @@ h4 {
   width: 210px;
   height: 45px;
   box-shadow: 2px 2px 2px 1px rgba(78, 78, 78, 0.2);
+  /*gradient pour la partie presentation*/
 }
 .btn--gradient {
   background: linear-gradient(350deg, #9356DC, #FF79DA);
@@ -137,7 +143,7 @@ h4 {
   display: flex;
   flex-direction: column;
   width: 100%;
-  height: 280px;
+  height: 300px;
   background-color: whitesmoke;
   align-items: center;
 }
@@ -155,7 +161,7 @@ h4 {
     text-align: center;
   }
   .presentation_btn {
-    margin-top: 30px;
+    margin-top: 40px;
     font-family: "Roboto Slab", sans-serif;
     align-items: center;
     justify-content: center;
@@ -171,8 +177,8 @@ h4 {
 
 h1 {
   font-family: "Roboto Slab", sans-serif;
-  font-weight: 780;
-  font-size: 22px;
+  font-weight: 800;
+  font-size: 23px;
   color: black;
 }
 
@@ -184,6 +190,152 @@ p {
 
 a {
   text-decoration: none;
+  color: white;
+}
+a:visited {
+  color: white;
+}
+a:link {
+  color: white;
+}
+a:hover {
+  color: white;
+}
+
+.btn {
+  background-color: #b6b6b6;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+  width: 210px;
+  height: 45px;
+  box-shadow: 2px 2px 2px 1px rgba(78, 78, 78, 0.2);
+  /*gradient pour la partie presentation*/
+}
+.btn--gradient {
+  background: linear-gradient(350deg, #9356DC, #FF79DA);
+}
+
+/* card tuto*/
+.tuto_card {
+  width: 100%;
+  height: 70px;
+  display: flex;
+  margin-bottom: 20px;
+  align-items: center;
+  justify-content: center;
+  filter: drop-shadow(0 0 0.5rem #c7c7c7);
+}
+.tuto_card_num {
+  position: relative;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: #9356DC;
+  margin-right: 10px;
+}
+.tuto_card_num p {
+  font-family: "Roboto Slab", sans-serif;
+  font-size: 12px;
+  color: white;
+  text-align: center;
+  margin-top: 7px;
+}
+.tuto_card_background {
+  width: 100%;
+  height: 65px;
+  display: flex;
+  background: #f2f2f2;
+  border-radius: 10px;
+  margin-left: -20px;
+}
+.tuto_card_icon {
+  padding-top: 22px;
+  padding-right: 25px;
+  padding-left: 25px;
+}
+.tuto_card_icon span {
+  font-size: 1.2em;
+  color: #707070;
+}
+.tuto_card_text {
+  padding-top: 25px;
+  padding-right: 28px;
+}
+
+h3 {
+  font-family: "Roboto Slab", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.fonctionnement {
+  width: auto;
+  height: 380px;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+}
+@media (max-width: 768px) {
+  .fonctionnement {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 50px;
+  }
+}
+
+h1 {
+  font-family: "Roboto Slab", sans-serif;
+  font-weight: 800;
+  font-size: 23px;
+  color: black;
+}
+
+.tuto_cardList {
+  margin-top: 30px;
+}
+
+.footer {
+  width: auto;
+  height: 170px;
+  background-color: #272727;
+}
+@media (max-width: 768px) {
+  .footer {
+    padding-left: 20px;
+    padding-top: 20px;
+  }
+  .footer img {
+    width: 100px;
+    height: 20px;
+    margin-bottom: 15px;
+  }
+  .footer_list {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .footer_list_doubleText {
+    margin-bottom: 10px;
+  }
+  .footer_list_doubleText span {
+    font-size: 0.8em;
+    color: white;
+    margin-right: 5px;
+  }
+  .footer_list a {
+    font-family: "Roboto Slab", sans-serif;
+    margin-bottom: 12px;
+  }
+}
+
+#proposer {
+  margin-right: 10px;
+}
+
+.changeColor {
+  filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(317deg) brightness(103%) contrast(102%);
 }
 
 /*# sourceMappingURL=style.css.map */

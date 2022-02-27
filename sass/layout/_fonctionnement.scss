@@ -1,0 +1,26 @@
+@import "../utils/mixins";
+@import "../base/typography";
+@import "../composants/button";
+@import "../composants/card";
+
+.fonctionnement{
+    width: auto;
+    height: 380px;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+
+    @media (max-width: 768px){
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 50px;
+    }
+}
+
+h1{
+    @include titre;
+}
+
+.tuto_cardList{
+    margin-top: 30px;
+}
