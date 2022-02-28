@@ -1,17 +1,19 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;900&display=swap");
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
 */
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;900&display=swap");
 @import "./base/_typography.css";
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;900&display=swap");
 @import "./base/_typography.css";
 @import "./base/_typography.css";
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;900&display=swap");
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -272,7 +274,7 @@ h3 {
 
 .fonctionnement {
   width: auto;
-  height: 380px;
+  height: 370px;
   display: flex;
   flex-direction: column;
   background-color: white;
@@ -294,6 +296,103 @@ h1 {
 
 .tuto_cardList {
   margin-top: 30px;
+}
+
+/*filter: drop-shadow(0 0 0.50rem rgb(199, 199, 199));*/
+.resto {
+  width: auto;
+  height: 1220px;
+  background-color: whitesmoke;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+@media (max-width: 768px) {
+  .resto h1 {
+    padding-top: 50px;
+  }
+  .resto_cardList {
+    margin-top: 30px;
+  }
+  .resto_card {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 250px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+  }
+  .resto_card_top {
+    width: 100%;
+    height: 170px;
+  }
+  .resto_card_top img {
+    width: 100%;
+    height: 170px;
+    object-fit: cover;
+    border-top-left-radius: 18px;
+    border-top-right-radius: 18px;
+  }
+  .resto_card_top_new {
+    width: 20%;
+    height: 28px;
+    border-radius: 3px;
+    position: relative;
+    bottom: 95%;
+    left: 75%;
+    background-color: #99E2D0;
+  }
+  .resto_card_top_new p {
+    font-family: "Roboto Slab", sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+    color: #4a8576;
+    text-align: center;
+    padding-top: 8px;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  .resto_card_bot {
+    display: flex;
+    height: 80px;
+    width: 100%;
+  }
+  .resto_card_bot_text {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    width: 80%;
+    height: 100%;
+  }
+  .resto_card_bot_text p {
+    font-family: "Roboto Slab", sans-serif;
+    font-size: 18px;
+  }
+  .resto_card_bot_icon {
+    width: 20%;
+    height: fit-content;
+    margin-top: 20px;
+    margin-left: 80px;
+  }
+  .resto_card_bot_icon span {
+    font-size: 1.8em;
+    color: #868686;
+  }
+}
+
+h1 {
+  font-family: "Roboto Slab", sans-serif;
+  font-weight: 800;
+  font-size: 23px;
+  color: black;
+}
+
+h2 {
+  font-family: "Roboto Slab", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  color: black;
+  margin-bottom: 10px;
 }
 
 .footer {
