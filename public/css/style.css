@@ -321,6 +321,7 @@ h1 {
     height: 250px;
     margin-bottom: 20px;
     border-radius: 20px;
+    filter: drop-shadow(0 0 0.5rem #c7c7c7);
   }
   .resto_card_top {
     width: 100%;
