@@ -1,0 +1,106 @@
+@import "../utils/mixins";
+@import "../base/typography";
+@import "../utils/variables";
+
+.menu{
+    width: auto;
+    height: fit-content;
+    position: relative;
+    background-color: rgb(245, 245, 245);
+    margin-top: 20px;
+    padding-left: 20px;
+    padding-top: 5px;
+    padding-right: 20px;
+}
+
+.title{
+    margin-top: 30px;
+    width: 30%;
+    height: 30px;
+    @media (max-width: 768px){
+        & h3{
+            font-family: $font;
+            font-size: 15px;
+            color: grey;
+            font-weight: lighter;
+        }
+    }
+
+    &_deco{
+        margin-top: 5px;
+        width: 40%;
+        border-bottom: 3px solid;
+        color: $color-tertiary;
+    }
+}
+
+.card{
+    display: flex;
+    padding-left:10px;
+    padding-top: 5px;
+    padding-bottom: 10px;
+    background-color: white;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    border-radius: 15px;
+    width: auto;
+    height: 40px;
+    filter: drop-shadow(0 0 0.50rem rgb(216, 216, 216));
+
+    &_text{
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+
+        &_title{
+            width: 100%;
+            margin-bottom: 0;
+            margin-top: 5px;
+
+            & h2{
+                font-size: 16px;
+                font-weight: 700;
+                font-family: $font;
+                color: black;
+            }
+        }
+
+        &_description{
+            width: 100%;
+            margin-top: -5px;
+
+            & p{
+                font-size: 14px;
+                font-family: $font;
+                color: grey;
+                white-space: nowrap;
+                text-overflow: ellipsis; 
+                overflow: hidden;
+                line-height: 1.2;
+            }
+           
+        }
+    }
+
+    &_prix{
+        width: 15%;
+        height: 100%;
+    }
+}
+
+.prix{
+    margin-left: 20px;
+    margin-top: 30px;
+    font-size: 13px;
+    font-weight: 700;
+    color: black;
+}
+
+.commander{
+    width: auto;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 30px;
+}

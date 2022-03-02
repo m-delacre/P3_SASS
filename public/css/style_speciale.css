@@ -1,0 +1,20 @@
+/* speciale header pour les restaurants*/
+
+.header_icon{
+    display: block !important;
+    height: 62px;
+    margin-top: 25px;
+    margin-left: 20px;
+}
+
+
+@media screen and (max-width: 768px){
+    .icon{
+        font-size: 1.3em;
+        color: rgb(60, 60, 60);
+    }
+    
+    .header_logo{
+        margin-left: 62px;
+    }
+}

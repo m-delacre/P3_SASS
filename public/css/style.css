@@ -1,19 +1,36 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
 */
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 @import "./base/_typography.css";
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 @import "./base/_typography.css";
 @import "./base/_typography.css";
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -66,8 +83,6 @@ table {
 
 .header {
   display: flex;
-  align-items: center;
-  justify-content: center;
   width: 100%;
   height: 65px;
   background-color: white;
@@ -80,15 +95,12 @@ table {
   .header_logo {
     width: 180px;
     height: 30px;
-    margin-top: 15px;
-    align-items: center;
-    justify-content: center;
+    margin-top: 22px;
+    margin-left: 100px;
   }
   .header_logo img {
     width: 100%;
     height: 100%;
-    align-items: center;
-    justify-content: center;
   }
 }
 
@@ -126,7 +138,7 @@ h4 {
   color: #444444;
 }
 
-.btn {
+.presentation_btn {
   background-color: #b6b6b6;
   border-top-left-radius: 50px;
   border-top-right-radius: 50px;
@@ -135,8 +147,26 @@ h4 {
   width: 210px;
   height: 45px;
   box-shadow: 2px 2px 2px 1px rgba(78, 78, 78, 0.2);
-  /*gradient pour la partie presentation*/
 }
+
+.btn_commander {
+  background-color: #b6b6b6;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+  width: 180px;
+  height: 45px;
+  box-shadow: 2px 2px 2px 1px rgba(78, 78, 78, 0.2);
+}
+.btn_commander p {
+  text-align: center;
+  padding-top: 15px;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+/*gradient pour la partie presentation*/
 .btn--gradient {
   background: linear-gradient(350deg, #9356DC, #FF79DA);
 }
@@ -204,7 +234,7 @@ a:hover {
   color: white;
 }
 
-.btn {
+.presentation_btn {
   background-color: #b6b6b6;
   border-top-left-radius: 50px;
   border-top-right-radius: 50px;
@@ -213,8 +243,26 @@ a:hover {
   width: 210px;
   height: 45px;
   box-shadow: 2px 2px 2px 1px rgba(78, 78, 78, 0.2);
-  /*gradient pour la partie presentation*/
 }
+
+.btn_commander {
+  background-color: #b6b6b6;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+  width: 180px;
+  height: 45px;
+  box-shadow: 2px 2px 2px 1px rgba(78, 78, 78, 0.2);
+}
+.btn_commander p {
+  text-align: center;
+  padding-top: 15px;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+/*gradient pour la partie presentation*/
 .btn--gradient {
   background: linear-gradient(350deg, #9356DC, #FF79DA);
 }
@@ -394,6 +442,139 @@ h2 {
   font-size: 18px;
   color: black;
   margin-bottom: 10px;
+}
+
+.top_img {
+  width: 100%;
+  height: 280px;
+}
+.top_img img {
+  object-fit: cover;
+  width: 100%;
+  height: 280px;
+}
+
+.title_resto {
+  display: flex;
+  background-color: whitesmoke;
+  width: 100%;
+  height: 50px;
+  border-top-left-radius: 35px;
+  border-top-right-radius: 35px;
+  position: absolute;
+  top: 290px;
+  padding-top: 40px;
+}
+.title_resto_text {
+  padding-left: 20px;
+  width: 80%;
+}
+.title_resto_text h1 {
+  font-family: "Shrikhand", cursive;
+  font-size: 27px;
+  color: black;
+}
+.title_resto_icon {
+  width: 20%;
+  margin-left: 40px;
+}
+.title_resto_icon span {
+  font-size: 1.6em;
+}
+
+.menu {
+  width: auto;
+  height: fit-content;
+  position: relative;
+  background-color: whitesmoke;
+  margin-top: 20px;
+  padding-left: 20px;
+  padding-top: 5px;
+  padding-right: 20px;
+}
+
+.title {
+  margin-top: 30px;
+  width: 30%;
+  height: 30px;
+}
+@media (max-width: 768px) {
+  .title h3 {
+    font-family: "Roboto Slab", sans-serif;
+    font-size: 15px;
+    color: grey;
+    font-weight: lighter;
+  }
+}
+.title_deco {
+  margin-top: 5px;
+  width: 40%;
+  border-bottom: 3px solid;
+  color: #99E2D0;
+}
+
+.card {
+  display: flex;
+  padding-left: 10px;
+  padding-top: 5px;
+  padding-bottom: 10px;
+  background-color: white;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  border-radius: 15px;
+  width: auto;
+  height: 40px;
+  filter: drop-shadow(0 0 0.5rem #d8d8d8);
+}
+.card_text {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+}
+.card_text_title {
+  width: 100%;
+  margin-bottom: 0;
+  margin-top: 5px;
+}
+.card_text_title h2 {
+  font-size: 16px;
+  font-weight: 700;
+  font-family: "Roboto Slab", sans-serif;
+  color: black;
+}
+.card_text_description {
+  width: 100%;
+  margin-top: -5px;
+}
+.card_text_description p {
+  font-size: 14px;
+  font-family: "Roboto Slab", sans-serif;
+  color: grey;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  line-height: 1.2;
+}
+.card_prix {
+  width: 15%;
+  height: 100%;
+}
+
+.prix {
+  margin-left: 20px;
+  margin-top: 30px;
+  font-size: 13px;
+  font-weight: 700;
+  color: black;
+}
+
+.commander {
+  width: auto;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 30px;
 }
 
 .footer {
