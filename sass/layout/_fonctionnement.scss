@@ -5,22 +5,67 @@
 
 .fonctionnement{
     width: auto;
-    height: 370px;
+    height: 150px;
     display: flex;
     flex-direction: column;
     background-color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 50px;
+
+    @media (min-width: 1000px){
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 50px;
+    }
+
+    @media (min-width:769px) and (max-width:1000px){
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 50px;
+        height: 350px;
+    }
 
     @media (max-width: 768px){
+        height: 370px;
         padding-left: 20px;
         padding-right: 20px;
         padding-top: 50px;
     }
-}
 
-h1{
-    @include titre;
+    & h1{
+        @include titre;
+        border-bottom: 4px solid $color-primary;
+
+        @media (min-width:769px) and (max-width:1000px){
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        @media (max-width: 768px){
+            border-bottom: none;
+        }
+    }
 }
 
 .tuto_cardList{
-    margin-top: 30px;
+    margin-top: 50px;
+    display: flex;
+
+    @media (max-width: 768px){
+        margin-top: 30px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    @media (min-width:769px) and (max-width:1000px){
+        margin-top: 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-left: 50px;
+    }
 }
