@@ -21,10 +21,10 @@
     border-top-right-radius: 35px;
     position: absolute;
     top: 290px;
-    padding-top: 40px;
+    padding-top: 50px;
 
     &_text{
-        padding-left: 20px;
+        padding-left: 25%;
         width: 80%;
         & h1{
             @include titre_restaurant;
@@ -33,9 +33,47 @@
 
     &_icon{
         width: 20%;
-        margin-left: 40px;
+        padding-right: 15%;
         & span{
             font-size: 1.6em;
+        }
+    }
+
+    @media (min-width: 768px) and (max-width:1000px){
+        &_text{
+            padding-left: 10%;
+            width: 80%;
+            & h1{
+                @include titre_restaurant;
+            }
+        }
+    
+        &_icon{
+            width: 20%;
+            padding: 0;
+            padding-left: 120px;
+            & span{
+                font-size: 1.6em;
+            }
+        }
+    }
+
+    @media (max-width: 768px){
+        &_text{
+            padding-left: 20px;
+            width: 80%;
+            & h1{
+                @include titre_restaurant;
+            }
+        }
+    
+        &_icon{
+            width: 20%;
+            padding: 0;
+            padding-left: 40px;
+            & span{
+                font-size: 1.6em;
+            }
         }
     }
 }

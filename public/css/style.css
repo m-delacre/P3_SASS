@@ -98,7 +98,12 @@ table {
   width: 100%;
   height: 100%;
 }
-@media (max-width: 769px) and (max-width: 1000px) {
+.header_icon {
+  display: block;
+  position: absolute;
+  right: 98%;
+}
+@media (min-width: 769px) and (max-width: 1000px) {
   .header_logo {
     width: 180px;
     height: 30px;
@@ -106,6 +111,11 @@ table {
   .header_logo img {
     width: 100%;
     height: 100%;
+  }
+  .header_icon {
+    display: flex;
+    position: absolute;
+    left: 3%;
   }
 }
 @media (max-width: 768px) {
@@ -119,9 +129,8 @@ table {
   }
   .header_icon {
     display: block;
-    height: 62px;
-    margin-top: 25px;
-    margin-left: 20px;
+    position: absolute;
+    right: 90%;
   }
   .header_logo {
     justify-content: center;
@@ -356,12 +365,17 @@ a:hover {
   padding-top: 22px;
   padding-right: 25px;
   padding-left: 25px;
+  width: 3%;
+  justify-content: center;
+  align-items: center;
 }
 .tuto_card_icon span {
+  width: 100%;
   font-size: 1.2em;
   color: #707070;
 }
 .tuto_card_text {
+  width: 97%;
   padding-top: 25px;
   padding-right: 28px;
 }
@@ -654,10 +668,10 @@ h2 {
   border-top-right-radius: 35px;
   position: absolute;
   top: 290px;
-  padding-top: 40px;
+  padding-top: 50px;
 }
 .title_resto_text {
-  padding-left: 20px;
+  padding-left: 25%;
   width: 80%;
 }
 .title_resto_text h1 {
@@ -667,10 +681,48 @@ h2 {
 }
 .title_resto_icon {
   width: 20%;
-  margin-left: 40px;
+  padding-right: 15%;
 }
 .title_resto_icon span {
   font-size: 1.6em;
+}
+@media (min-width: 768px) and (max-width: 1000px) {
+  .title_resto_text {
+    padding-left: 10%;
+    width: 80%;
+  }
+  .title_resto_text h1 {
+    font-family: "Shrikhand", cursive;
+    font-size: 26px;
+    color: black;
+  }
+  .title_resto_icon {
+    width: 20%;
+    padding: 0;
+    padding-left: 120px;
+  }
+  .title_resto_icon span {
+    font-size: 1.6em;
+  }
+}
+@media (max-width: 768px) {
+  .title_resto_text {
+    padding-left: 20px;
+    width: 80%;
+  }
+  .title_resto_text h1 {
+    font-family: "Shrikhand", cursive;
+    font-size: 26px;
+    color: black;
+  }
+  .title_resto_icon {
+    width: 20%;
+    padding: 0;
+    padding-left: 40px;
+  }
+  .title_resto_icon span {
+    font-size: 1.6em;
+  }
 }
 
 .menu {
@@ -679,29 +731,47 @@ h2 {
   position: relative;
   background-color: whitesmoke;
   margin-top: 20px;
-  padding-left: 20px;
-  padding-top: 5px;
-  padding-right: 20px;
+  padding-left: 25%;
+  padding-top: 20px;
+  padding-right: 25%;
+}
+@media (min-width: 769px) and (max-width: 1000px) {
+  .menu {
+    margin-top: 20px;
+    padding-left: 80px;
+    padding-top: 5px;
+    padding-right: 80px;
+  }
+}
+@media (max-width: 768px) {
+  .menu {
+    margin-top: 20px;
+    padding-left: 20px;
+    padding-top: 5px;
+    padding-right: 20px;
+  }
 }
 
 .title {
   margin-top: 30px;
-  width: 30%;
+  width: 15%;
   height: 30px;
-}
-@media (max-width: 768px) {
-  .title h3 {
-    font-family: "Roboto Slab", sans-serif;
-    font-size: 15px;
-    color: grey;
-    font-weight: lighter;
-  }
 }
 .title_deco {
   margin-top: 5px;
   width: 40%;
   border-bottom: 3px solid;
   color: #99E2D0;
+}
+@media (max-width: 768px) {
+  .title {
+    width: 40%;
+  }
+}
+@media (min-width: 768px) and (max-width: 1000px) {
+  .title {
+    width: 20%;
+  }
 }
 
 .card {
@@ -714,8 +784,21 @@ h2 {
   margin-bottom: 15px;
   border-radius: 15px;
   width: auto;
-  height: 40px;
+  height: 50px;
   filter: drop-shadow(0 0 0.5rem #d8d8d8);
+}
+@media (max-width: 768px) {
+  .card {
+    padding-left: 10px;
+    padding-top: 5px;
+    padding-bottom: 10px;
+    background-color: white;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    border-radius: 15px;
+    width: auto;
+    height: 40px;
+  }
 }
 .card_text {
   display: flex;
