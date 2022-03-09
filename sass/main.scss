@@ -1,5 +1,9 @@
 @import "./base/typography";
+@import "./utils/variables";
+@import "./utils/mixins";
 @import "./base/reset";
+@import "./composants/button";
+@import "./composants/card";
 @import "./layout/header";
 @import "./layout/spinner";
 @import "./layout/localisation";
