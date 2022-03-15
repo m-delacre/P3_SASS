@@ -775,6 +775,56 @@ h2 {
   filter: drop-shadow(0 0 0.5rem #d8d8d8);
 }
 @media (max-width: 768px) {
+  .card:hover > .card_prix > .card_prix_price {
+    animation-name: decale;
+    animation-duration: 800ms;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: both;
+    transform-origin: right;
+  }
+}
+.card:hover > .card_prix > .card_prix_check {
+  animation-name: checked;
+  animation-duration: 800ms;
+  animation-timing-function: linear;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: both;
+  transform-origin: right;
+}
+.card:hover > .card_prix > .card_prix_check span {
+  animation-name: tourne;
+  animation-duration: 800ms;
+  animation-timing-function: linear;
+  animation-delay: 100ms;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: both;
+  transform-origin: center;
+}
+@keyframes checked {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 50%;
+  }
+}
+@keyframes tourne {
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+@keyframes decale {
+  100% {
+    transform: translateX(-30px);
+  }
+}
+@media (max-width: 768px) {
   .card {
     padding-left: 10px;
     padding-top: 5px;
@@ -817,10 +867,55 @@ h2 {
   line-height: 1.2;
 }
 .card_prix {
-  width: 15%;
+  width: 20%;
+  height: 65px;
+  display: flex;
+  margin-top: -5px;
+}
+.card_prix_price {
+  width: 50%;
+}
+.card_prix_check {
+  width: 0%;
   height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #99E2D0;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+.card_prix_check span {
+  font-size: 25px;
 }
 
+.tripleCard {
+  width: auto;
+  height: auto;
+  opacity: 1;
+  animation-name: apparition;
+  animation-duration: 1500ms;
+  animation-timing-function: linear;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: both;
+}
+
+@keyframes apparition {
+  0% {
+    transform: translateY(100px);
+    opacity: 0;
+  }
+  50% {
+    transform: translateY(50px);
+    opacity: 0.15;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
 .prix {
   margin-left: 20px;
   margin-top: 30px;

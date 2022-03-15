@@ -57,6 +57,68 @@
     height: 50px;
     filter: drop-shadow(0 0 0.50rem rgb(216, 216, 216));
 
+    &:hover > .card_prix{
+
+        @media (max-width:768px){
+            & > .card_prix_price{
+                animation-name: decale;
+                animation-duration: 800ms;
+                animation-timing-function: linear;
+                animation-delay: 0s;
+                animation-iteration-count: 1;
+                animation-direction: normal ;
+                animation-fill-mode: both;
+                transform-origin: right;
+            }
+        }
+
+        & > .card_prix_check{
+            animation-name: checked;
+            animation-duration: 800ms;
+            animation-timing-function: linear;
+            animation-delay: 0s;
+            animation-iteration-count: 1;
+            animation-direction: normal ;
+            animation-fill-mode: both;
+            transform-origin: right;
+
+            &  span{
+                animation-name: tourne;
+                animation-duration: 800ms;
+                animation-timing-function: linear;
+                animation-delay: 100ms;
+                animation-iteration-count: 1;
+                animation-direction: normal ;
+                animation-fill-mode: both;
+                transform-origin: center;
+            }
+        }
+        
+
+        
+    }
+
+    @keyframes checked{
+        0%{
+            width: 0%;
+        }
+        100%{
+            width: 50%;
+        }
+    }
+
+    @keyframes tourne{
+        100%{
+            transform: rotate(-360deg);
+        }
+    }
+    
+    @keyframes decale{
+        100%{
+            transform: translateX(-30px);
+        }
+    }
+
     @media (max-width:768px){
         padding-left:10px;
         padding-top: 5px;
@@ -105,8 +167,58 @@
     }
 
     &_prix{
-        width: 15%;
-        height: 100%;
+        width: 20%;
+        height: 65px;
+        display: flex;
+        margin-top: -5px;
+
+        &_price{
+            width:50%;
+        }
+
+        &_check{
+
+            width: 0%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: $color-tertiary;
+            border-top-right-radius: 15px;
+            border-bottom-right-radius: 15px;
+
+            & span{
+                font-size: 25px;
+            }
+        }
+    }
+}
+
+.tripleCard{
+    width: auto;
+    height: auto;
+    opacity: 1;
+    animation-name: apparition;
+    animation-duration: 1500ms;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-direction: normal ;
+    animation-fill-mode: both;
+}
+
+@keyframes apparition{
+    0%{
+        transform: translateY(100px);
+        opacity: 0;
+    }
+    50%{
+        transform: translateY(50px);
+        opacity: 0.15;
+    }
+    100%{
+        transform: translateY(0px);
+        opacity: 1;
     }
 }
 
