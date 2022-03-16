@@ -71,12 +71,12 @@
 }
 
 .loader {
-    border: 16px solid lighten($color-secondary, 20%); /* rose */
+    border: 16px solid lighten($color-secondary, 22%); /* rose */
     border-top: 16px solid $color-primary; /* violet */
     border-radius: 50%;
     width: 120px;
     height: 120px;
-    animation: spin 3s linear 1;
+    animation: spin 2s linear;
     opacity: 1;
 }
 
@@ -88,7 +88,7 @@
 
 .loader_background{
     background-color: white;
-    animation: show 3s linear;
+    animation: show 2s linear;
     z-index: -1;
     opacity: 0;
     display: flex;
