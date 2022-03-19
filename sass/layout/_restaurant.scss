@@ -163,10 +163,15 @@
 }
 
 .coeurFull {
+    width: auto;
     height: 100%;
     color: white;
     opacity: 0;
-    display: block;
+    display: inline-block;
+    position: absolute;
+    left: 85.5%;
+    top: 78%;
+    line-height:40px;
 
     &:hover{
         opacity: 1;

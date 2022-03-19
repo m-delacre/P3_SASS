@@ -620,10 +620,15 @@ a:hover {
 }
 
 .coeurFull {
+  width: auto;
   height: 100%;
   color: white;
   opacity: 0;
-  display: block;
+  display: inline-block;
+  position: absolute;
+  left: 85.5%;
+  top: 78%;
+  line-height: 40px;
 }
 .coeurFull:hover {
   opacity: 1;
@@ -813,22 +818,60 @@ h2 {
   animation-direction: normal;
   animation-fill-mode: both;
 }
+.card:hover > .card_text {
+  width: 65%;
+}
+.card:hover > .card_prix {
+  margin-left: 340px;
+}
 @media (max-width: 768px) {
   .card:hover > .card_prix {
-    width: 30%;
-  }
-  .card:hover > .card_prix > .card_prix_price {
-    width: 50%;
-    animation-name: decale;
-    animation-duration: 800ms;
+    margin-left: 0px;
+    width: 45%;
+    animation-name: adecale;
+    animation-duration: 500ms;
     animation-timing-function: linear;
     animation-delay: 0s;
     animation-iteration-count: 1;
     animation-direction: normal;
     animation-fill-mode: both;
   }
+  .card:hover > .card_prix > .card_prix_price {
+    margin-right: -20px;
+    background-color: white;
+    margin-right: 3px;
+  }
   .card:hover > .card_prix > .card_prix_check {
-    width: 100%;
+    margin-right: -120px;
+  }
+  .card:hover > .card_prix > .card_prix_check span {
+    opacity: 0;
+    font-size: 23px;
+  }
+}
+@media (min-width: 769px) and (max-width: 1000px) {
+  .card:hover > .card_prix {
+    margin-left: 150px;
+    width: 45%;
+    animation-name: adecale;
+    animation-duration: 500ms;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: both;
+  }
+  .card:hover > .card_prix > .card_prix_price {
+    margin-right: -20px;
+    background-color: white;
+    margin-right: 3px;
+  }
+  .card:hover > .card_prix > .card_prix_check {
+    margin-right: -120px;
+  }
+  .card:hover > .card_prix > .card_prix_check span {
+    opacity: 0;
+    font-size: 23px;
   }
 }
 .card:hover > .card_prix > .card_prix_check {
@@ -866,7 +909,7 @@ h2 {
 }
 @keyframes decale {
   100% {
-    transform: translateX(-30px);
+    transform: translateX(-20px);
   }
 }
 @media (max-width: 768px) {
@@ -886,6 +929,7 @@ h2 {
   display: flex;
   flex-direction: column;
   width: 80%;
+  text-overflow: ellipsis;
 }
 .card_text_title {
   width: 100%;
@@ -897,6 +941,7 @@ h2 {
   font-weight: 700;
   font-family: "Roboto Slab", sans-serif;
   color: black;
+  text-overflow: ellipsis;
 }
 .card_text_description {
   width: 100%;

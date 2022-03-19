@@ -64,45 +64,88 @@
     animation-fill-mode: both;
 
     
-    &:hover > .card_prix{
+    &:hover{
+        & >.card_text{
+            width: 65%;
+        }
+        & >.card_prix{
+            margin-left: 340px;
+            @media (max-width:768px){
+                margin-left: 0px;
+                width: 45%;
+                animation-name: adecale;
+                animation-duration: 500ms;
+                animation-timing-function: linear;
+                animation-delay: 0s;
+                animation-iteration-count: 1;
+                animation-direction: normal ;
+                animation-fill-mode: both;
 
-        @media (max-width:768px){
-            width: 30%;
-            & > .card_prix_price{
-                width: 50%;
-                animation-name: decale;
+                & > .card_prix_price{
+                    margin-right: -20px;
+                    background-color: white;
+                    margin-right: 3px;
+                }
+
+                & > .card_prix_check{
+                    margin-right: -120px;
+
+                    & span{
+                        opacity: 0;
+                        font-size: 23px;
+                    }
+                }
+                
+            }
+
+            @media (min-width:769px) and (max-width:1000px){
+                margin-left: 150px;
+                width: 45%;
+                animation-name: adecale;
+                animation-duration: 500ms;
+                animation-timing-function: linear;
+                animation-delay: 0s;
+                animation-iteration-count: 1;
+                animation-direction: normal ;
+                animation-fill-mode: both;
+
+                & > .card_prix_price{
+                    margin-right: -20px;
+                    background-color: white;
+                    margin-right: 3px;
+                }
+
+                & > .card_prix_check{
+                    margin-right: -120px;
+
+                    & span{
+                        opacity: 0;
+                        font-size: 23px;
+                    }
+                }
+                
+            }
+
+            & > .card_prix_check{
+                animation-name: checked;
                 animation-duration: 800ms;
                 animation-timing-function: linear;
                 animation-delay: 0s;
                 animation-iteration-count: 1;
                 animation-direction: normal ;
                 animation-fill-mode: both;
-            }
 
-            & > .card_prix_check{
-                width: 100%;
-            }
-        }
-
-        & > .card_prix_check{
-            animation-name: checked;
-            animation-duration: 800ms;
-            animation-timing-function: linear;
-            animation-delay: 0s;
-            animation-iteration-count: 1;
-            animation-direction: normal ;
-            animation-fill-mode: both;
-
-            &  span{
-                opacity: 1;
-                animation-name: tourne;
-                animation-duration: 800ms;
-                animation-timing-function: linear;
-                animation-delay: 100ms;
-                animation-iteration-count: 1;
-                animation-direction: normal ;
-                animation-fill-mode: both;
-                transform-origin: center;
+                &  span{
+                    opacity: 1;
+                    animation-name: tourne;
+                    animation-duration: 800ms;
+                    animation-timing-function: linear;
+                    animation-delay: 100ms;
+                    animation-iteration-count: 1;
+                    animation-direction: normal ;
+                    animation-fill-mode: both;
+                    transform-origin: center;
+                }
             }
         }
     }
@@ -124,7 +167,7 @@
     
     @keyframes decale{
         100%{
-            transform: translateX(-30px);
+            transform: translateX(-20px);
         }
     }
 
@@ -144,6 +187,7 @@
         display: flex;
         flex-direction: column;
         width: 80%;
+        text-overflow: ellipsis; 
 
         &_title{
             width: 100%;
@@ -155,6 +199,7 @@
                 font-weight: 700;
                 font-family: $font;
                 color: black;
+                text-overflow: ellipsis; 
             }
         }
 
