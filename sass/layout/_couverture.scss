@@ -17,7 +17,7 @@
     border-top-left-radius: 35px;
     border-top-right-radius: 35px;
     position: absolute;
-    top: 290px;
+    top: 270px;
     padding-top: 50px;
 
     &_text{
@@ -31,9 +31,6 @@
     &_icon{
         width: 20%;
         padding-right: 15%;
-        & span{
-            font-size: 1.6em;
-        }
     }
 
     @media (min-width: 768px) and (max-width:1000px){
@@ -49,28 +46,56 @@
             width: 20%;
             padding: 0;
             padding-left: 120px;
-            & span{
-                font-size: 1.6em;
-            }
         }
     }
 
     @media (max-width: 768px){
+        top: 300px;
+        padding-top: 30px;
+
         &_text{
             padding-left: 20px;
-            width: 80%;
+            width: 90%;
             & h1{
                 @include titre_restaurant;
             }
         }
     
         &_icon{
-            width: 20%;
-            padding: 0;
-            padding-left: 40px;
-            & span{
-                font-size: 1.6em;
-            }
+            width: 10%;
+            margin-bottom: 5;
+            padding-left: 10px;
         }
     }
+}
+
+.title_resto_icon .emptyHeart {
+    font-size: 1.7rem;
+    cursor: pointer;
+    position: relative;
+    transition: color 150ms 50ms ease;
+    color: gray;
+}
+
+.title_resto_icon .emptyHeart:hover {
+    color: transparent;
+}
+
+.title_resto_icon .emptyHeart:hover > .fullHeart {
+    transform: scale(1);
+}
+
+.title_resto_icon .fullHeart {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background: linear-gradient(170deg, #FF79DA, #9356DC);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transform: scale(0);
+    transition: transform 150ms 50ms ease-in-out;
+}
+
+.title_resto_icon .emptyHeart {
+    margin: auto;
 }

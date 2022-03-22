@@ -119,8 +119,6 @@
                 transform-origin: center;
                 width: 20%;
                 height: auto;
-                margin-top: 20px;
-                margin-left: 80px;
 
                 & i {
                     height: auto;
@@ -154,45 +152,41 @@
     }
 }
 
-.coeurBorder{   
-    height: 100%;
-    position: absolute;
-    left: 85.5%;
-    top: 80.2%;
-    color: rgb(134, 134, 134);
+.resto_card_bot .resto_card_bot_icon .emptyHeart {
+    font-size: 1.7rem;
+    cursor: pointer;
+    position: relative;
+    transition: color 150ms 50ms ease;
+    color: gray;
 }
 
-.coeurFull {
-    width: auto;
-    height: 100%;
-    color: white;
-    opacity: 0;
-    display: inline-block;
-    position: absolute;
-    left: 85.5%;
-    top: 78%;
-    line-height:40px;
-
-    &:hover{
-        opacity: 1;
-        /* Fallback: Set a background color. */
-        background-color: red;
-        
-        /* Create the gradient. */
-        background-image: linear-gradient(350deg, #9356DC, #FF79DA);
-        
-        /* Set the background size and repeat properties. */
-        background-size: 100%;
-        background-repeat: repeat;
-    
-        /* Use the text as a mask for the background. */
-        /* This will show the gradient as a text color rather than element bg. */
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent; 
-        -moz-background-clip: text;
-        -moz-text-fill-color: transparent;
-    }
+.resto_card_bot .resto_card_bot_icon .emptyHeart:hover {
+    color: transparent;
 }
+
+.resto_card_bot .resto_card_bot_icon .emptyHeart:hover > .fullHeart {
+    transform: scale(0.8);
+}
+
+.resto_card_bot .resto_card_bot_icon .fullHeart {
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    background: linear-gradient(170deg, #FF79DA, #9356DC);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transform: scale(0);
+    transition: transform 150ms 50ms ease-in-out;
+}
+
+.resto_card_bot .resto_card_bot_icon .emptyHeart {
+    margin: auto;
+}
+
+.flex {
+    display: flex;
+}
+
 
 .restotitre{
     @media (min-width:1000px){

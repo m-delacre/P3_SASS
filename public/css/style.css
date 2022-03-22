@@ -576,8 +576,6 @@ a:hover {
   transform-origin: center;
   width: 20%;
   height: auto;
-  margin-top: 20px;
-  margin-left: 80px;
 }
 .resto_card_bot_icon i {
   height: auto;
@@ -611,40 +609,39 @@ a:hover {
   }
 }
 
-.coeurBorder {
-  height: 100%;
-  position: absolute;
-  left: 85.5%;
-  top: 80.2%;
-  color: #868686;
+.resto_card_bot .resto_card_bot_icon .emptyHeart {
+  font-size: 1.7rem;
+  cursor: pointer;
+  position: relative;
+  transition: color 150ms 50ms ease;
+  color: gray;
 }
 
-.coeurFull {
-  width: auto;
-  height: 100%;
-  color: white;
-  opacity: 0;
-  display: inline-block;
-  position: absolute;
-  left: 85.5%;
-  top: 78%;
-  line-height: 40px;
+.resto_card_bot .resto_card_bot_icon .emptyHeart:hover {
+  color: transparent;
 }
-.coeurFull:hover {
-  opacity: 1;
-  /* Fallback: Set a background color. */
-  background-color: red;
-  /* Create the gradient. */
-  background-image: linear-gradient(350deg, #9356DC, #FF79DA);
-  /* Set the background size and repeat properties. */
-  background-size: 100%;
-  background-repeat: repeat;
-  /* Use the text as a mask for the background. */
-  /* This will show the gradient as a text color rather than element bg. */
+
+.resto_card_bot .resto_card_bot_icon .emptyHeart:hover > .fullHeart {
+  transform: scale(0.8);
+}
+
+.resto_card_bot .resto_card_bot_icon .fullHeart {
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  background: linear-gradient(170deg, #FF79DA, #9356DC);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  -moz-background-clip: text;
-  -moz-text-fill-color: transparent;
+  transform: scale(0);
+  transition: transform 150ms 50ms ease-in-out;
+}
+
+.resto_card_bot .resto_card_bot_icon .emptyHeart {
+  margin: auto;
+}
+
+.flex {
+  display: flex;
 }
 
 @media (min-width: 1000px) {
@@ -692,7 +689,7 @@ h2 {
   border-top-left-radius: 35px;
   border-top-right-radius: 35px;
   position: absolute;
-  top: 290px;
+  top: 270px;
   padding-top: 50px;
 }
 .title_resto_text {
@@ -707,9 +704,6 @@ h2 {
 .title_resto_icon {
   width: 20%;
   padding-right: 15%;
-}
-.title_resto_icon span {
-  font-size: 1.6em;
 }
 @media (min-width: 768px) and (max-width: 1000px) {
   .title_resto_text {
@@ -726,14 +720,15 @@ h2 {
     padding: 0;
     padding-left: 120px;
   }
-  .title_resto_icon span {
-    font-size: 1.6em;
-  }
 }
 @media (max-width: 768px) {
+  .title_resto {
+    top: 300px;
+    padding-top: 30px;
+  }
   .title_resto_text {
     padding-left: 20px;
-    width: 80%;
+    width: 90%;
   }
   .title_resto_text h1 {
     font-family: "Shrikhand", cursive;
@@ -741,13 +736,41 @@ h2 {
     color: black;
   }
   .title_resto_icon {
-    width: 20%;
-    padding: 0;
-    padding-left: 40px;
+    width: 10%;
+    margin-bottom: 5;
+    padding-left: 10px;
   }
-  .title_resto_icon span {
-    font-size: 1.6em;
-  }
+}
+
+.title_resto_icon .emptyHeart {
+  font-size: 1.7rem;
+  cursor: pointer;
+  position: relative;
+  transition: color 150ms 50ms ease;
+  color: gray;
+}
+
+.title_resto_icon .emptyHeart:hover {
+  color: transparent;
+}
+
+.title_resto_icon .emptyHeart:hover > .fullHeart {
+  transform: scale(1);
+}
+
+.title_resto_icon .fullHeart {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background: linear-gradient(170deg, #FF79DA, #9356DC);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transform: scale(0);
+  transition: transform 150ms 50ms ease-in-out;
+}
+
+.title_resto_icon .emptyHeart {
+  margin: auto;
 }
 
 .menu {
@@ -929,23 +952,29 @@ h2 {
   display: flex;
   flex-direction: column;
   width: 80%;
-  text-overflow: ellipsis;
 }
 .card_text_title {
   width: 100%;
   margin-bottom: 0;
-  margin-top: 5px;
+  display: inline-block;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  height: 40px;
 }
-.card_text_title h2 {
-  font-size: 15px;
-  font-weight: 700;
+.card_text_title p {
+  font-size: 17px;
+  font-weight: 600;
+  margin-top: 3px;
   font-family: "Roboto Slab", sans-serif;
   color: black;
+  white-space: nowrap;
   text-overflow: ellipsis;
+  overflow: hidden;
+  line-height: 1.2;
+  margin-bottom: 5px;
 }
 .card_text_description {
   width: 100%;
-  margin-top: -5px;
 }
 .card_text_description p {
   font-size: 14px;
@@ -990,6 +1019,7 @@ h2 {
 .card_prix_check span {
   opacity: 0;
   font-size: 25px;
+  color: white;
 }
 @media (max-width: 768px) {
   .card_prix {
