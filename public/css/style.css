@@ -848,13 +848,6 @@ h2 {
   .card:hover > .card_prix {
     margin-left: 0px;
     width: 45%;
-    animation-name: adecale;
-    animation-duration: 500ms;
-    animation-timing-function: linear;
-    animation-delay: 0s;
-    animation-iteration-count: 1;
-    animation-direction: normal;
-    animation-fill-mode: both;
   }
   .card:hover > .card_prix > .card_prix_price {
     margin-right: -20px;
@@ -873,13 +866,6 @@ h2 {
   .card:hover > .card_prix {
     margin-left: 150px;
     width: 45%;
-    animation-name: adecale;
-    animation-duration: 500ms;
-    animation-timing-function: linear;
-    animation-delay: 0s;
-    animation-iteration-count: 1;
-    animation-direction: normal;
-    animation-fill-mode: both;
   }
   .card:hover > .card_prix > .card_prix_price {
     margin-right: -20px;
@@ -925,11 +911,6 @@ h2 {
 @keyframes tourne {
   100% {
     transform: rotate(-360deg);
-  }
-}
-@keyframes decale {
-  100% {
-    transform: translateX(-20px);
   }
 }
 @media (max-width: 768px) {

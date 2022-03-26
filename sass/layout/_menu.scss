@@ -62,7 +62,6 @@
     animation-iteration-count: 1;
     animation-direction: normal ;
     animation-fill-mode: both;
-
     
     &:hover{
         & >.card_text{
@@ -73,13 +72,6 @@
             @media (max-width:768px){
                 margin-left: 0px;
                 width: 45%;
-                animation-name: adecale;
-                animation-duration: 500ms;
-                animation-timing-function: linear;
-                animation-delay: 0s;
-                animation-iteration-count: 1;
-                animation-direction: normal ;
-                animation-fill-mode: both;
 
                 & > .card_prix_price{
                     margin-right: -20px;
@@ -101,13 +93,6 @@
             @media (min-width:769px) and (max-width:1000px){
                 margin-left: 150px;
                 width: 45%;
-                animation-name: adecale;
-                animation-duration: 500ms;
-                animation-timing-function: linear;
-                animation-delay: 0s;
-                animation-iteration-count: 1;
-                animation-direction: normal ;
-                animation-fill-mode: both;
 
                 & > .card_prix_price{
                     margin-right: -20px;
@@ -162,12 +147,6 @@
     @keyframes tourne{
         100%{
             transform: rotate(-360deg);
-        }
-    }
-    
-    @keyframes decale{
-        100%{
-            transform: translateX(-20px);
         }
     }
 
