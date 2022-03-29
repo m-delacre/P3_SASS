@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -844,6 +845,7 @@ h2 {
   animation-iteration-count: 1;
   animation-direction: normal;
   animation-fill-mode: both;
+  /* delay d'affichage des cartes une à une*/
 }
 .card:hover > .card_text {
   width: 65%;
