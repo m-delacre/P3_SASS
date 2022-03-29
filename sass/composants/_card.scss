@@ -9,6 +9,7 @@
     filter: drop-shadow(0 0 0.50rem rgb(199, 199, 199));
     margin-right: 40px;
 
+
     &_num{
         position: relative;
         width: 25px;
@@ -42,12 +43,12 @@
         width: 3%;
         justify-content: center;
         align-items: center;
+        color: rgb(112, 112, 112);
         
         & span{
             position: relative;
             width: 100%;
             font-size: 1.2em;
-            color: rgb(112, 112, 112);
         }
     }
 
@@ -60,6 +61,15 @@
     @media (max-width: 768px){
         width: 100%;
         margin-right: 0px;
+    }
+}
+
+.tuto_card:hover{
+    > .tuto_card_background{
+        background: #ffdcfe;
+        > .tuto_card_icon{
+            color: $color-primary;
+        }
     }
 }
 

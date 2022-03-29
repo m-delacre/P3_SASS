@@ -137,10 +137,10 @@
 
     @keyframes checked{
         0%{
-            width: 0%;
+            transform: scaleX(0);
         }
         100%{
-            width: 50%;
+            transform: scaleX(1);
         }
     }
 
@@ -229,7 +229,7 @@
         }
 
         &_check{
-            width: 0%;
+            width: 50%;
             height: 100%;
             display: flex;
             justify-content: center;
@@ -237,6 +237,8 @@
             background-color: $color-tertiary;
             border-top-right-radius: 15px;
             border-bottom-right-radius: 15px;
+            transform: scaleX(0);
+            transform-origin: right;
 
             & span{
                 opacity: 0;
